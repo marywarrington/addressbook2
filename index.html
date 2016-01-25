@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/styles.css" media="screen" title="no title" charset="utf-8">
+    <script type="text/javascript" src="js/jquery-1.12.0.js">
+    </script>
+    <script type="text/javascript" src="js/scripts.js">
+    </script>
+    <title>Contact List</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact List</h1>
+      <form id="contact" action="index.html" method="post">
+        <div class="form-group">
+          <label for="firstName">First name</label>
+          <input id="firstName" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="street">Street Address</label>
+          <input id="street" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="city">City</label>
+          <input id="city" type="text" name="name" value="">
+        </div>
+        <div class="form-group">
+          <label for="state">State</label>
+          <input id="state" type="text" name="name" value="">
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div class="nameListHidden">
+        <h3>Names</h3>
+        <ul id="nameList">
+
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
