@@ -22,7 +22,16 @@ $(document).ready(function() {
 
     var newContact = new Contact(firstNameInput, lastNameInput, streetInput, cityInput, stateInput);
 
-    $("ul#nameList").append("<li>" + newContact.fullName() + "</li>");
+    $("ul#nameList").append("<li class='firstList'>" + newContact.fullName() + "</li>");
 
+    $('li.firstList').last().click(function() {
+      $('div.contactLastHidden').show();
+      $('li#nameOutput').text(newContact.fullName());
+      $('li#streetOutput').text(newContact.street);
+      $('li#cityOutput').text(newContact.city);
+      $('li#stateOutput').text(newContact.state);
+    });
   });
+
+
 });
