@@ -21,19 +21,23 @@
           <label for="lastName">Last Name</label>
           <input id="lastName" type="text" name="name" value="">
         </div>
-        <div class="form-group">
-          <label for="street">Street Address</label>
-          <input id="street" type="text" name="name" value="">
-        </div>
-        <div class="form-group">
-          <label for="city">City</label>
-          <input id="city" type="text" name="name" value="">
-        </div>
-        <div class="form-group">
-          <label for="state">State</label>
-          <input id="state" type="text" name="name" value="">
+        <div class="newAddress" id="originalAddress">
+          <div class="form-group">
+            <label for="street">Street Address</label>
+            <input class="street" type="text" name="name" value="">
+          </div>
+          <div class="form-group">
+            <label for="city">City</label>
+            <input class="city" type="text" name="name" value="">
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input class="state" type="text" name="name" value="">
+          </div>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <label for="addAddress">Add an additional address</label>
+        <button type="button"class= "btn btn-primary" id="addAddress" name="button">Add</button>
       </form>
       <div class="nameListHidden">
         <h3>Names</h3>
@@ -45,9 +49,9 @@
         <h3>Full Contact Info:</h3>
         <ul id="contactLast">
           <li id="nameOutput"></li>
-          <li id="streetOutput"></li>
-          <li id="cityOutput"></li>
-          <li id="stateOutput"></li>
+          <li class="addressOutput"></li>
+          <!-- <li id="cityOutput"></li>
+          <li id="stateOutput"></li> -->
         </ul>
       </div>
     </div>
